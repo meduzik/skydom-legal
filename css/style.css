@@ -1,0 +1,79 @@
+html, body, div, iframe, p,
+a, img, b, ul, li, header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role сброс для старых браузеров */
+header {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+
+h1 {
+	color: #212121;
+  font-size: 24px;
+  font-weight: 400;
+	font-family: 'RobotoDraft',arial,sans-serif;
+	line-height: 1.29;
+	margin: 1.236em 0 .618em;
+	display: block;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.67em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+
+}
+
+.container {
+	height: 100%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container-left {
+	width: 47%;
+	float: left;
+	margin: 0 1.4880952381% 20px;
+}
+
+.container-right {
+	width: 47%;
+	float: left;
+	margin: 0 1.4880952381% 20px;
+}
+
+.navigation li {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+}
+.navigation li:last-child {
+	margin-right: 0;
+}
+
+.frame {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.btn {
+	border-radius: 5px;
+	display: inline-block;
+	margin: 0;
+	margin-top: 5px;
+	padding: 10px;
+}
+
+p {
+	text-align: center;
+}

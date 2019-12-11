@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+	<link rel="stylesheet" href="{{site.baseurl}}/css/style.css" />
+	<link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico" />
+</head>
+<body>
+	<header>
+		<div class="container">
+			<nav class="navigation">				
+				<ul>
+					<li>
+						<a href="{{site.baseurl}}/en/privacy" >Privacy Policy</a>
+					</li>
+					<li>
+						<a href="{{site.baseurl}}/en/terms" >Terms of Service</a>
+					</li>
+					<li>
+						<a href="{{site.baseurl}}/en/thirdparty" >Third Party Software</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="container">
+	
+		{{ content }}
+		
+		<nav class="navigation">
+			<ul>
+				<li>
+					<a href="{{site.baseurl}}{{ page.url | replace: 'en', 'ru' }}" >Русский</a>
+				</li>
+				<li>
+					<a href="{{site.baseurl}}{{ page.url | replace: 'en', 'en'}}" >English</a>
+				</li>
+				<li>
+					<a href="{{site.baseurl}}{{ page.url | replace: 'en', 'de'}}" >Deutsch</a>
+				</li>
+			</ul>
+		</nav>
+	</main>
+</body>
+</html>
